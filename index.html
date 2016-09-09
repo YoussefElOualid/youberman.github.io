@@ -1,1 +1,77 @@
-<h1>TEs</h1>
+<script src="js/jquery.js"></script>
+<script src="js/jsonEngDesk.js"></script>
+<link href="bootstrap.min.css" rel="stylesheet" />
+
+<meta charset="utf-8"/>
+<script>
+$(function(){
+		$('.events').on('change',function(){
+			alert($(this).val()+':'+$(".events option:selected").text());
+		})
+})
+
+</script>
+
+<script return-output=".extern"
+json-url="http://www.w3schools.com/website/customers_mysql.php" json-output="Name,City,Country" tag="label" tag-class="col-md-4 col-xs-4 text-primary"  tag-parent-class="form-group" tag-parent="div" >
+</script>
+
+
+
+
+
+<style>
+.test label{
+	padding : 5px;
+	border-bottom:2px solid green;
+	margin-bottom : 5px;
+}
+.test{
+	color : red;
+	margin-bottom: 15px;
+}
+
+</style>
+
+<div class="row">
+<fieldset class="col-md-6"><legend>JSONEngDesk Example 1</legend>
+<ul
+json-url='[{"nom":"Example 1"},{"nom":"Example 2"},{"nom":"Example 3"}]' json-output="nom" tag="li">
+</ul>
+</fieldset>
+
+
+
+<fieldset class="col-md-6"><legend>JSONEngDesk Fichier</legend>
+<div
+json-url="json.php" json-output="id,Prenom,nom" tag="label" tag-class="col-md-4 col-xs-4 text-primary"  tag-parent-class="form-group" tag-parent="div" >
+</div>
+</fieldset>
+
+<fieldset class="col-md-6"><legend>JSONEngDesk Fichier HTML</legend>
+<div
+json-url="json.html">
+</div>
+</fieldset>
+
+<fieldset class="col-md-6"><legend>JSONEngDesk  EXtern URL</legend>
+<div class="extern">
+</div>
+</fieldset>
+
+
+<fieldset class="col-md-6"><legend>JSONEngDesk  Events 
+<button 
+return-output=".events" 
+json-output="Id_SC,Libelle_SC"  
+tag="option" 
+json-click='[{"id":1,"nom":"Example 1"},{"id":2,"nom":"Example 2"},{"id":3,"nom":"Example 3"}]'
+>Click</button>
+</legend>
+
+<select class="events">
+</select>
+</fieldset>
+
+
+</div>
