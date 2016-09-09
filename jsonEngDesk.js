@@ -37,10 +37,10 @@ $.prototype.AjS = function(b,e){
 				if(typeof $(b).prop('tagName') == "script")
 					$(b).remove();
 			
-		//	$(b).removeAttr('json-output tag tag-class tag-parent tag-parent-class')
+			$(b).removeAttr('json-output tag tag-class tag-parent tag-parent-class')
 			$($ele).html($html.join(''))
 			}else{
-		//	$(b).removeAttr('json-output tag tag-class tag-parent tag-parent-class')
+			$(b).removeAttr('json-output tag tag-class tag-parent tag-parent-class')
 			$($ele).html(e)
 			}
 }
@@ -57,7 +57,7 @@ $.prototype.AjE = function(b){
 			$().AjS(b,e);
 		}
 		})
-		//$(b).removeAttr('json-url')
+		$(b).removeAttr('json-url')
 }
 }
 $.prototype.jsonE = function(b){
