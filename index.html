@@ -32,46 +32,158 @@ json-url="http://www.w3schools.com/website/customers_mysql.php" json-output="Nam
 }
 
 </style>
-
-<div class="">
-<fieldset class="col-md-12"><legend>JSONEngDesk Example 1</legend>
+<div class="panel panel-default">
+  <div class="panel-heading text-center"><h2>JSONEngDesk</h2></div>
+  <div class="panel-body">
+  
+<div class="row col-md-12">
+<div class="col-md-6">
+	<div class="panel panel-default">
+	<div class="panel-heading text-center"><h5>Installation Requirement</h5></div>
+	<div class="panel-body">
+			<div class="well well-sm">
+			&lt;script href="jquery.js"&gt;&lt;script&gt;<br>
+			&lt;script href="jsonEngDesk.js"&gt;&lt;script&gt;<br>
+			</div>
+	</div>
+	</div>
+	
+</div>
+<div class="col-md-6">
+<fieldset><legend> Attr JSONEngDesk </legend>
+<table class="table"> <thead> 
+<tr> <th>First Name</th> <th>Last Name</th></tr> </thead> 
+<tbody> <tr><td>json-url</td> <td>@mdo</td> </tr> 
+	   <tr><td>json-output</td> <td>@fat</td> </tr> 
+	   <tr><td>json-click</td> <td>@twitter</td> </tr>
+	   <tr><td>tag</td> <td>@twitter</td> </tr>
+	   <tr><td>tag-class</td> <td>@twitter</td> </tr>
+	   <tr><td>tag-parent</td> <td>@twitter</td> </tr>
+	   <tr><td>tag-parent-class</td> <td>@twitter</td> </tr>
+	   <tr><td>return-output</td> <td>@twitter</td> </tr>
+</tbody> </table>
+</fieldset>
+</div>
+</div>
+<div class="page-header text-center">
+  <H4>Example 1 </H4>
+</div>
+<div class="row col-md-12">
+<fieldset class="col-md-6"><legend>Example</legend>
 <ul
-json-url='[{"nom":"Example 1"},{"nom":"Example 2"},{"nom":"Example 3"}]' json-output="nom" tag="li">
+json-url='[{"nom":"Example 1"},{"nom":"Example 2"},{"nom":"Example 3"},{"nom":"Example 4"}]' json-output="nom" tag="li">
 </ul>
 </fieldset>
 
-
-
-<fieldset class="col-md-12"><legend>JSONEngDesk Fichier</legend>
+<fieldset class="col-md-6"><legend>Source html</legend>
+<div class="well well-sm">
+&lt;ul
+json-url='[{"nom":"Example 1"},{"nom":"Example 2"},{"nom":"Example 3"},{"nom":"Example 4"}]' json-output="nom" tag="li" &gt;
+&lt;ul&gt;
+</div>
+</fieldset>
+</div>
+<div class="page-header text-center">
+  <H4>Example 2 </H4>
+</div>
+<div class="row col-md-12">
+<fieldset class="col-md-6"><legend>Source Contact</legend>
 <div
-json-url="https://raw.githubusercontent.com/youberman/youberman.github.io/master/json.php" json-output="id,Prenom,nom" tag="label" tag-class="col-md-4 col-xs-4 text-primary"  tag-parent-class="form-group" tag-parent="div" >
+json-url="http://127.0.0.1/mad3/GETSC" json-output="Libelle_SC,Prem_Date_SC" tag="label" tag-class="col-md-6 col-xs-6 text-primary"  tag-parent-class="form-group" tag-parent="div" >
 </div>
 </fieldset>
 
-<fieldset class="col-md-12"><legend>JSONEngDesk Fichier HTML</legend>
+<fieldset class="col-md-6"><legend>Source html</legend>
+<div class="well well-sm">
+&lt;div
+json-url="http://127.0.0.1/mad3/GETSC" json-output="Libelle_SC,Prem_Date_SC" tag="label" tag-class="col-md-6 col-xs-6 text-primary"  tag-parent-class="form-group" tag-parent="div" &gt;
+&lt;div&gt;
+</div>
+</fieldset>
+</div>
+<div class="page-header text-center">
+  <H4>Example 3 </H4>
+</div>
+<div class="row col-md-12">
+<fieldset class="col-md-6"><legend>Fichier JSON</legend>
 <div
-json-url="https://raw.githubusercontent.com/youberman/youberman.github.io/master/json.html">
+json-url="json.php" json-output="id,Prenom,nom" tag="label" tag-class="col-md-4 col-xs-4 text-primary"  tag-parent-class="form-group" tag-parent="div" >
 </div>
 </fieldset>
 
-<fieldset class="col-md-12"><legend>JSONEngDesk  Extern URL</legend>
+
+<fieldset class="col-md-6"><legend>Source html</legend>
+<div class="well well-sm">
+&lt;div
+json-url="json.php" json-output="id,Prenom,nom" tag="label" tag-class="col-md-4 col-xs-4 text-primary"  tag-parent-class="form-group" tag-parent="div"&gt;
+&lt;div&gt;
+</div>
+</fieldset>
+</div>
+<div class="page-header text-center">
+  <H4>Example 4 </H4>
+</div>
+<div class="row col-md-12">
+<fieldset class="col-md-6"><legend>Fichier HTML</legend>
+<div
+json-url="json.html">
+</div>
+</fieldset>
+<fieldset class="col-md-6"><legend>Source html</legend>
+<div class="well well-sm">
+&lt;div
+json-url="json.html" &gt;
+&lt;div&gt;
+</div>
+</fieldset>
+</div>
+<div class="page-header text-center">
+  <H4>Example 5 </H4>
+</div>
+<div class="row col-md-12">
+<fieldset class="col-md-6"><legend>EXtern URL</legend>
 <div class="extern">
 </div>
 </fieldset>
+<fieldset class="col-md-6"><legend>Source html</legend>
+<div class="well well-sm">
+&lt;script return-output=".extern"
+json-url="http://www.w3schools.com/website/customers_mysql.php" json-output="Name,City,Country" tag="label" tag-class="col-md-4 col-xs-4 text-primary"  tag-parent-class="form-group" tag-parent="div" &gt;
+&lt;script&gt;
+</div>
+</fieldset>
+</div>
 
+<div class="page-header text-center">
+  <H4>Example 4 </H4>
+</div>
 
-<fieldset class="col-md-12"><legend>JSONEngDesk  Events 
-<button 
+<div class="row col-md-12">
+<fieldset class="col-md-6"><legend>Events 
+<button class="btn btn-primary"
 return-output=".events" 
-json-output="id,nom"  
+json-output="Id_SC,Libelle_SC"  
 tag="option" 
-json-click='[{"id":1,"nom":"Example 1"},{"id":2,"nom":"Example 2"},{"id":3,"nom":"Example 3"}]'
+json-click="http://127.0.0.1/mad3/GETSC"
 >Click</button>
 </legend>
+
 
 <select class="events">
 </select>
 </fieldset>
-
-
+<fieldset class="col-md-6"><legend>Source html</legend>
+<div class="well well-sm">
+&lt;button 
+return-output=".events" 
+json-output="Id_SC,Libelle_SC"  
+tag="option" 
+json-click="http://127.0.0.1/mad3/GETSC" &gt;
+&lt;button&gt;
+&lt;select class="events"&gt;
+&lt;/select&gt;
+</div>
+</fieldset>
+</div>
+  </div>
 </div>
